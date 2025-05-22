@@ -1,0 +1,16 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "src"
+description = "an AI powered cli for creating the project layout"
+authors = [{name = "yashsehgal9253@gmail.com", email = "yashsehgal9253@gmail.com"}]
+license = {file = "LICENSE"}
+version = "0.0.1"
+dependencies = [
+    "openai"
+]
+
+[project-scripts]
+layouter = "src.executor:main"
